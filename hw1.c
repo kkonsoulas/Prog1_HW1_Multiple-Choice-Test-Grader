@@ -1,8 +1,3 @@
-/*
- * ONOMATEPWNYMO:Konsoulas Konstantinos 02975
- * ONOMATEPWNYMO:
-  *
-*/
 #include<stdio.h>
 #include<math.h>
 #include"hw1.h"
@@ -21,11 +16,6 @@ int main (int argc, char *argv[]) {
 	int first_index=0, last_index=0;
 	int k=0;
 	
-	//Code's utility
-	
-			//(code)//
-	
-	//
 	
 	//Number of choices reader
 	num_max_choice = MAX_CHOICE +1 - MIN_CHOICE;
@@ -38,18 +28,15 @@ int main (int argc, char *argv[]) {
 	//
 	
 	//Correct answers reader
-	printf("\nEnter answer key: ");
-	
 	lreal_max_choice = MIN_CHOICE-1 + real_max_choice ;
-	
+	printf("\nEnter answer key: ");
 	
 	for(i=0; i < NUM_QUESTIONS; i++){
 		scanf(" %c",&correct_answers[i]);
 		
 		if((correct_answers[i]<MIN_CHOICE) || (correct_answers[i]>lreal_max_choice)){
 			printf("\nError. Enter value %c-%c: ", MIN_CHOICE, lreal_max_choice);
-			i--;
-			
+			i--;	
 		}
 	}
 	//
@@ -83,7 +70,6 @@ int main (int argc, char *argv[]) {
 	
 	//Student answers checker
 	for(i=0; i<NUM_STUDENTS; i++){
-		
 		for(j=0; j<NUM_QUESTIONS; j++){
 			if((correct_answers[j] == student_answers[i][j])){
 				stats[i][0]++;
@@ -92,8 +78,6 @@ int main (int argc, char *argv[]) {
 				stats[i][1]++;
 			}
 		}
-		
-		
 	}
 	//
 	
@@ -112,8 +96,6 @@ int main (int argc, char *argv[]) {
 	//Standard deviation calculator
 	for(i=0; i<NUM_STUDENTS; i++){
 		sd = sd +pow((stats[i][2] - average),2);
-		
-		
 	}
 	sd = sqrt(sd /NUM_STUDENTS);
 	//
