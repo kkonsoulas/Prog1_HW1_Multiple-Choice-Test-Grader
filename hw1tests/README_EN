@@ -1,0 +1,118 @@
+TEST #1 -
+Input file: in_5_4_A_Z__C_0.0
+Output file: out_5_4_A_Z__C_0.0
+
+Use:
+
+#define NUM_STUDENTS 5
+#define NUM_QUESTIONS 4
+
+#define MIN_CHOICE 'A'
+#define MAX_CHOICE 'Z'
+
+The test has valid answers A-C and zero penalty.
+
+================================================= =========
+TEST #2 -
+Input file: in_5_3_A_Z__C_-0.25
+Output file: out_5_3_A_Z__C_-0.25
+
+Use:
+
+#define NUM_STUDENTS 5
+#define NUM_QUESTIONS 3
+
+#define MIN_CHOICE 'A'
+#define MAX_CHOICE 'Z'
+
+The test has valid answers A-C and a -0.25 penalty
+
+================================================= =========
+
+TEST #3 -
+Input file: in_2_2_E_G__G_0.0
+Output file: out_2_2_E_G__G_0.0
+
+Use:
+
+#define NUM_STUDENTS 2
+#define NUM_QUESTIONS 2
+
+#define MIN_CHOICE 'E'
+#define MAX_CHOICE 'G'
+
+The test has valid answers E-G and zero penalty.
+Incorrect input check:
+- at the Enter number of choices question
+- in the Enter wrong answer penalty question
+
+================================================= =========
+
+TEST #4-
+Input file: in_10_5_W_Z__Y_-0.15
+Output file: out_10_5_W_Z__Y_-0.15
+
+Use:
+
+#define NUM_STUDENTS 10
+#define NUM_QUESTIONS 5
+
+#define MIN_CHOICE 'W'
+#define MAX_CHOICE 'Z'
+
+The test has valid W-Y answers and a -0.15 penalty
+Check for incorrect input in menu options and input
+of the answers.
+
+================================================= =========
+
+TEST #5-
+Input file: in_10_4_A_E__E_-0.25
+Output file: out_10_4_A_E__E_-0.25
+
+Use:
+
+#define NUM_STUDENTS 10
+#define NUM_QUESTIONS 4
+
+#define MIN_CHOICE 'A'
+#define MAX_CHOICE 'E'
+
+The test has valid answers A-E and a -0.25 penalty
+Check for wrong entry in values for options g, i.
+
+================================================= =========
+
+TEST #6-
+Input file: in_50_20_A_Z__Z_-0.038
+Output file: out_50_20_A_Z__Z_-0.038
+
+Use:
+
+#define NUM_STUDENTS 50
+#define NUM_QUESTIONS 20
+
+#define MIN_CHOICE 'A'
+#define MAX_CHOICE 'Z'
+
+The test has valid answers A-Z and a penalty of -0.038
+Random input for default values.
+
+================================================= =========
+
+TEST #7-
+Input file: in_5000_40_A_Z__E_-0.2
+Output file: out_5000_40_A_Z__E_-0.2
+
+Use:
+
+#define NUM_STUDENTS 5000
+#define NUM_QUESTIONS 40
+
+#define MIN_CHOICE 'A'
+#define MAX_CHOICE 'Z'
+
+The test has valid answers A-E and a -0.2 penalty
+Random entry for a large number of students and questions.
+
+================================================= ========= 
